@@ -1,20 +1,14 @@
-//
-//  ContentView.swift
-//  Erasmus
-//
-//  Created by Bilgesu Barış on 24.03.2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     @State private var showLogin = false
     @State private var showRegister = false
+    @State private var isAdminLogin = false
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
-                Spacer() // Butonları ortalamak için üstte boşluk bırakır
+                Spacer()
 
                 Text("Hoş Geldiniz!")
                     .font(.largeTitle)
@@ -22,6 +16,7 @@ struct ContentView: View {
                     .padding()
 
                 Button(action: {
+                    isAdminLogin = false
                     showLogin = true
                 }) {
                     Text("Öğrenci Girişi")
@@ -35,6 +30,7 @@ struct ContentView: View {
                 .padding(.horizontal, 40)
 
                 Button(action: {
+                    isAdminLogin = true
                     showLogin = true
                 }) {
                     Text("Admin Girişi")
@@ -47,12 +43,10 @@ struct ContentView: View {
                 }
                 .padding(.horizontal, 40)
 
-                Spacer() // Butonları ortalamak için altta da boşluk bırakır
-
-        
+                Spacer()
             }
             .navigationDestination(isPresented: $showLogin) {
-                LoginView(showRegister: $showRegister)
+                LoginView(showRegister: $showRegister, isAdmin: isAdminLogin)
             }
             .navigationDestination(isPresented: $showRegister) {
                 RegisterView()
@@ -63,8 +57,10 @@ struct ContentView: View {
 
 struct LoginView: View {
     @Binding var showRegister: Bool
+    var isAdmin: Bool
     @State private var username = ""
     @State private var password = ""
+    @State private var goToDashboard = false
 
     var body: some View {
         VStack(spacing: 20) {
@@ -81,7 +77,9 @@ struct LoginView: View {
                 .padding(.horizontal, 40)
 
             Button(action: {
-                print("Giriş yapıldı!")
+                if !username.isEmpty && !password.isEmpty {
+                    goToDashboard = true
+                }
             }) {
                 Text("Giriş Yap")
                     .font(.title2)
@@ -93,7 +91,6 @@ struct LoginView: View {
             }
             .padding(.horizontal, 40)
 
-            // "Kayıt Ol" butonu yazı şeklinde olacak
             Button(action: {
                 showRegister = true
             }) {
@@ -106,6 +103,10 @@ struct LoginView: View {
             Spacer()
         }
         .padding(.top, 50)
+        .navigationDestination(isPresented: $goToDashboard) {
+            DashboardView(isAdmin: isAdmin)
+        }
+
     }
 }
 
@@ -157,7 +158,4 @@ struct RegisterView: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
 
