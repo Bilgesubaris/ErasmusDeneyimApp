@@ -1,0 +1,51 @@
+import SwiftUI
+
+struct Experience: Identifiable {
+    let id = UUID()
+    let name: String
+    let country: String
+    let university: String
+    let experience: String
+    let profileImage: String // Asset image name
+}
+
+struct ContentView: View {
+    let experiences: [Experience] = [
+        Experience(name: "İkra", country: "Polonya", university: "University of Warsaw", experience: "Soğuktu ama çok gezdim, kültürü tanımak harikaydı!", profileImage: "ikra"),
+        Experience(name: "Tuğba", country: "İtalya", university: "University of Bologna", experience: "Yemekler şahane, bol bol pizza yedim 🍕", profileImage: "tugba")
+    ]
+    
+    var body: some View {
+        NavigationView {
+            List(experiences) { exp in
+                ExperienceCard(experience: exp)
+            }
+            .navigationTitle("Erasmus Deneyimleri")
+        }
+    }
+}
+
+struct ExperienceCard: View {
+    let experience: Experience
+    
+    var body: some View {
+        HStack(alignment: .top, spacing: 16) {
+            Image(experience.profileImage)
+                .resizable()
+                .frame(width: 60, height: 60)
+                .clipShape(Circle())
+            
+            VStack(alignment: .leading, spacing: 6) {
+                Text("\(experience.name) - \(experience.country)")
+                    .font(.headline)
+                Text(experience.university)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                Text("\"\(experience.experience)\"")
+                    .font(.body)
+                    .padding(.top, 4)
+            }
+        }
+        .padding(.vertical, 8)
+    }
+}
