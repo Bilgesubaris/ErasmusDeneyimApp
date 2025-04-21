@@ -6,46 +6,73 @@ struct Experience: Identifiable {
     let country: String
     let university: String
     let experience: String
-    let profileImage: String // Asset image name
 }
 
 struct ContentView: View {
-    let experiences: [Experience] = [
-        Experience(name: "İkra", country: "Polonya", university: "University of Warsaw", experience: "Soğuktu ama çok gezdim, kültürü tanımak harikaydı!", profileImage: "ikra"),
-        Experience(name: "Tuğba", country: "İtalya", university: "University of Bologna", experience: "Yemekler şahane, bol bol pizza yedim 🍕", profileImage: "tugba")
-    ]
+    @State private var experiences: [Experience] = []
+    
+    // Ekleme formu için state'ler
+    @State private var name = ""
+    @State private var country = ""
+    @State private var university = ""
+    @State private var experienceText = ""
     
     var body: some View {
         NavigationView {
-            List(experiences) { exp in
-                ExperienceCard(experience: exp)
+            VStack {
+                Form {
+                    Section(header: Text("Deneyim Ekle")) {
+                        TextField("Adın", text: $name)
+                        TextField("Ülke", text: $country)
+                        TextField("Üniversite", text: $university)
+                        TextEditor(text: $experienceText)
+                            .frame(height: 100)
+                            .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray.opacity(0.3)))
+                        
+                        Button(action: addExperience) {
+                            Text("Deneyimi Kaydet")
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
+                        .disabled(name.isEmpty || country.isEmpty || university.isEmpty || experienceText.isEmpty)
+                    }
+                }
+                .frame(height: 400)
+                
+                List(experiences) { exp in
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("\(exp.name) - \(exp.country)")
+                            .font(.headline)
+                        Text(exp.university)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                        Text("\"\(exp.experience)\"")
+                            .padding(.top, 2)
+                    }
+                    .padding(.vertical, 6)
+                }
             }
             .navigationTitle("Erasmus Deneyimleri")
         }
     }
-}
-
-struct ExperienceCard: View {
-    let experience: Experience
     
-    var body: some View {
-        HStack(alignment: .top, spacing: 16) {
-            Image(experience.profileImage)
-                .resizable()
-                .frame(width: 60, height: 60)
-                .clipShape(Circle())
-            
-            VStack(alignment: .leading, spacing: 6) {
-                Text("\(experience.name) - \(experience.country)")
-                    .font(.headline)
-                Text(experience.university)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-                Text("\"\(experience.experience)\"")
-                    .font(.body)
-                    .padding(.top, 4)
-            }
-        }
-        .padding(.vertical, 8)
+    func addExperience() {
+        let newExperience = Experience(
+            name: name,
+            country: country,
+            university: university,
+            experience: experienceText
+        )
+        experiences.append(newExperience)
+        
+        // Formu sıfırla
+        name = ""
+        country = ""
+        university = ""
+        experienceText = ""
     }
 }
+
