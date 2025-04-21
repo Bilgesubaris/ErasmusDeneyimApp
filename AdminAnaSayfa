@@ -1,0 +1,41 @@
+import SwiftUI
+
+struct Experience: Identifiable, Equatable {
+    let id = UUID()
+    let name: String
+    let country: String
+    let university: String
+    let experience: String
+}
+
+struct AdminView: View {
+    @Binding var experiences: [Experience]
+    
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(experiences) { exp in
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("\(exp.name) - \(exp.country)")
+                            .font(.headline)
+                        Text(exp.university)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                        Text("\"\(exp.experience)\"")
+                            .padding(.top, 2)
+                    }
+                    .padding(.vertical, 6)
+                }
+                .onDelete(perform: deleteExperience)
+            }
+            .navigationTitle("Admin Paneli")
+            .toolbar {
+                EditButton()
+            }
+        }
+    }
+    
+    func deleteExperience(at offsets: IndexSet) {
+        experiences.remove(atOffsets: offsets)
+    }
+}
