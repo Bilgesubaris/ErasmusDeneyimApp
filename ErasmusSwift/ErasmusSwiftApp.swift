@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct ErasmusSwiftApp: App {
     var body: some Scene {
