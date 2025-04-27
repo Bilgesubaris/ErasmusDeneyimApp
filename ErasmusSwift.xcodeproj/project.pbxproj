@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		4D3655B92DBE767800A20ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3655A02DBE767700A20ED5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3655A72DBE767700A20ED5;
+			remoteInfo = ErasmusSwift;
+		};
+		4D3655C32DBE767800A20ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3655A02DBE767700A20ED5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3655A72DBE767700A20ED5;
+			remoteInfo = ErasmusSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D3655A82DBE767700A20ED5 /* ErasmusSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErasmusSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3655B82DBE767800A20ED5 /* ErasmusSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErasmusSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3655C22DBE767800A20ED5 /* ErasmusSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErasmusSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4D3655AA2DBE767700A20ED5 /* ErasmusSwift */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ErasmusSwift;
+			sourceTree = "<group>";
+		};
+		4D3655BB2DBE767800A20ED5 /* ErasmusSwiftTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ErasmusSwiftTests;
+			sourceTree = "<group>";
+		};
+		4D3655C52DBE767800A20ED5 /* ErasmusSwiftUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ErasmusSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D3655A52DBE767700A20ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3655B52DBE767800A20ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3655BF2DBE767800A20ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D36559F2DBE767700A20ED5 = {
+			isa = PBXGroup;
+			children = (
+				4D3655AA2DBE767700A20ED5 /* ErasmusSwift */,
+				4D3655BB2DBE767800A20ED5 /* ErasmusSwiftTests */,
+				4D3655C52DBE767800A20ED5 /* ErasmusSwiftUITests */,
+				4D3655A92DBE767700A20ED5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D3655A92DBE767700A20ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D3655A82DBE767700A20ED5 /* ErasmusSwift.app */,
+				4D3655B82DBE767800A20ED5 /* ErasmusSwiftTests.xctest */,
+				4D3655C22DBE767800A20ED5 /* ErasmusSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D3655A72DBE767700A20ED5 /* ErasmusSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3655CC2DBE767800A20ED5 /* Build configuration list for PBXNativeTarget "ErasmusSwift" */;
+			buildPhases = (
+				4D3655A42DBE767700A20ED5 /* Sources */,
+				4D3655A52DBE767700A20ED5 /* Frameworks */,
+				4D3655A62DBE767700A20ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4D3655AA2DBE767700A20ED5 /* ErasmusSwift */,
+			);
+			name = ErasmusSwift;
+			packageProductDependencies = (
+			);
+			productName = ErasmusSwift;
+			productReference = 4D3655A82DBE767700A20ED5 /* ErasmusSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D3655B72DBE767800A20ED5 /* ErasmusSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3655CF2DBE767800A20ED5 /* Build configuration list for PBXNativeTarget "ErasmusSwiftTests" */;
+			buildPhases = (
+				4D3655B42DBE767800A20ED5 /* Sources */,
+				4D3655B52DBE767800A20ED5 /* Frameworks */,
+				4D3655B62DBE767800A20ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D3655BA2DBE767800A20ED5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4D3655BB2DBE767800A20ED5 /* ErasmusSwiftTests */,
+			);
+			name = ErasmusSwiftTests;
+			packageProductDependencies = (
+			);
+			productName = ErasmusSwiftTests;
+			productReference = 4D3655B82DBE767800A20ED5 /* ErasmusSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D3655C12DBE767800A20ED5 /* ErasmusSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3655D22DBE767800A20ED5 /* Build configuration list for PBXNativeTarget "ErasmusSwiftUITests" */;
+			buildPhases = (
+				4D3655BE2DBE767800A20ED5 /* Sources */,
+				4D3655BF2DBE767800A20ED5 /* Frameworks */,
+				4D3655C02DBE767800A20ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D3655C42DBE767800A20ED5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4D3655C52DBE767800A20ED5 /* ErasmusSwiftUITests */,
+			);
+			name = ErasmusSwiftUITests;
+			packageProductDependencies = (
+			);
+			productName = ErasmusSwiftUITests;
+			productReference = 4D3655C22DBE767800A20ED5 /* ErasmusSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D3655A02DBE767700A20ED5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4D3655A72DBE767700A20ED5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					4D3655B72DBE767800A20ED5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4D3655A72DBE767700A20ED5;
+					};
+					4D3655C12DBE767800A20ED5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4D3655A72DBE767700A20ED5;
+					};
+				};
+			};
+			buildConfigurationList = 4D3655A32DBE767700A20ED5 /* Build configuration list for PBXProject "ErasmusSwift" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D36559F2DBE767700A20ED5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4D3655A92DBE767700A20ED5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D3655A72DBE767700A20ED5 /* ErasmusSwift */,
+				4D3655B72DBE767800A20ED5 /* ErasmusSwiftTests */,
+				4D3655C12DBE767800A20ED5 /* ErasmusSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D3655A62DBE767700A20ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3655B62DBE767800A20ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3655C02DBE767800A20ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D3655A42DBE767700A20ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3655B42DBE767800A20ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3655BE2DBE767800A20ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D3655BA2DBE767800A20ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D3655A72DBE767700A20ED5 /* ErasmusSwift */;
+			targetProxy = 4D3655B92DBE767800A20ED5 /* PBXContainerItemProxy */;
+		};
+		4D3655C42DBE767800A20ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D3655A72DBE767700A20ED5 /* ErasmusSwift */;
+			targetProxy = 4D3655C32DBE767800A20ED5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D3655CA2DBE767800A20ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D3655CB2DBE767800A20ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D3655CD2DBE767800A20ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ErasmusSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = S3AMMPWBA6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erasmuscom.bilgesubaris.ErasmusSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D3655CE2DBE767800A20ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ErasmusSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = S3AMMPWBA6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erasmuscom.bilgesubaris.ErasmusSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D3655D02DBE767800A20ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3AMMPWBA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erasmuscom.bilgesubaris.ErasmusSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ErasmusSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ErasmusSwift";
+			};
+			name = Debug;
+		};
+		4D3655D12DBE767800A20ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3AMMPWBA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erasmuscom.bilgesubaris.ErasmusSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ErasmusSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ErasmusSwift";
+			};
+			name = Release;
+		};
+		4D3655D32DBE767800A20ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3AMMPWBA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erasmuscom.bilgesubaris.ErasmusSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ErasmusSwift;
+			};
+			name = Debug;
+		};
+		4D3655D42DBE767800A20ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3AMMPWBA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = erasmuscom.bilgesubaris.ErasmusSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ErasmusSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D3655A32DBE767700A20ED5 /* Build configuration list for PBXProject "ErasmusSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3655CA2DBE767800A20ED5 /* Debug */,
+				4D3655CB2DBE767800A20ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3655CC2DBE767800A20ED5 /* Build configuration list for PBXNativeTarget "ErasmusSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3655CD2DBE767800A20ED5 /* Debug */,
+				4D3655CE2DBE767800A20ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3655CF2DBE767800A20ED5 /* Build configuration list for PBXNativeTarget "ErasmusSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3655D02DBE767800A20ED5 /* Debug */,
+				4D3655D12DBE767800A20ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3655D22DBE767800A20ED5 /* Build configuration list for PBXNativeTarget "ErasmusSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3655D32DBE767800A20ED5 /* Debug */,
+				4D3655D42DBE767800A20ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D3655A02DBE767700A20ED5 /* Project object */;
+}
