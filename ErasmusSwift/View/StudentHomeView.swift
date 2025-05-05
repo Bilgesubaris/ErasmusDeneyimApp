@@ -1,10 +1,3 @@
-//
-//  StudentHomeView.swift
-//  ErasmusSwift
-//
-//  Created by Bilgesu Barış on 5.05.2025.
-//
-
 import SwiftUI
 
 struct StudentHomeView: View {

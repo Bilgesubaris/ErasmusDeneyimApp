@@ -1,45 +1,49 @@
-//
-//  DashboardView.swift
-//  ErasmusDeneyim
-//
-//  Created by Bilgesu Barış on 7.04.2025.
-//
-
 import SwiftUI
 
 struct DashboardView: View {
-    var isAdmin: Bool = false // Giriş yapan kullanıcı admin mi?
+    var isAdmin: Bool = false
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 20) {
-                Text(isAdmin ? "Admin Paneline Hoş Geldin!" : "Erasmus'a Hoş Geldin!")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding(.top, 30)
+            ZStack {
+                LinearGradient(
+                    colors: [Color(.systemBlue), Color(.systemTeal)],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .ignoresSafeArea()
 
-                if isAdmin {
-                    // Admin'e özel işlemler
-                    NavigationLink(destination: Text("Etkinlikleri Yönet")) {
-                        DashboardButtonView(text: "Etkinlikleri Yönet", color: .purple)
+                VStack(spacing: 30) {
+                    Text(isAdmin ? "👩‍💻 Admin Paneline Hoş Geldin!" : "🌍 Erasmus'a Hoş Geldin!")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 50)
+                        .shadow(radius: 4)
+
+                    if isAdmin {
+                        NavigationLink(destination: Text("Etkinlikleri Yönet")) {
+                            DashboardButtonView(text: "Etkinlikleri Yönet", color: .purple, icon: "calendar.badge.plus")
+                        }
+
+                        NavigationLink(destination: Text("Kullanıcıları Yönet")) {
+                            DashboardButtonView(text: "Kullanıcıları Yönet", color: .orange, icon: "person.3.fill")
+                        }
+
+                    } else {
+                        NavigationLink(destination: Text("Etkinliklere Göz At")) {
+                            DashboardButtonView(text: "Etkinlikler", color: .green, icon: "sparkles")
+                        }
+
+                        NavigationLink(destination: Text("Profilimi Gör")) {
+                            DashboardButtonView(text: "Profilim", color: .blue, icon: "person.crop.circle")
+                        }
                     }
 
-                    NavigationLink(destination: Text("Kullanıcıları Yönet")) {
-                        DashboardButtonView(text: "Kullanıcıları Yönet", color: .orange)
-                    }
-
-                } else {
-                    // Öğrenciye özel işlemler
-                    NavigationLink(destination: Text("Etkinliklere Göz At")) {
-                        DashboardButtonView(text: "Etkinlikler", color: .green)
-                    }
-
-                    NavigationLink(destination: Text("Profilimi Gör")) {
-                        DashboardButtonView(text: "Profilim", color: .blue)
-                    }
+                    Spacer()
                 }
-
-                Spacer()
+                .padding(.horizontal)
             }
         }
     }
@@ -48,15 +52,23 @@ struct DashboardView: View {
 struct DashboardButtonView: View {
     var text: String
     var color: Color
+    var icon: String
 
     var body: some View {
-        Text(text)
-            .font(.title2)
-            .foregroundColor(.white)
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(color)
-            .cornerRadius(10)
-            .padding(.horizontal, 40)
+        HStack {
+            Image(systemName: icon)
+                .foregroundColor(.white)
+                .imageScale(.large)
+            Text(text)
+                .font(.title3)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background(color)
+        .cornerRadius(15)
+        .shadow(color: color.opacity(0.4), radius: 5, x: 0, y: 4)
+        .padding(.horizontal, 30)
     }
 }
